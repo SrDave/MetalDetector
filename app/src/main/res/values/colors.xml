@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Fondo general -->
+    <color name="bg_dark">#FFFFFF</color>
+    <color name="bg_darker">#F0F0F0</color>
+
+    <!-- Acentos -->
+    <color name="accent_green">#4CFF4C</color>
+    <color name="accent_yellow">#FFD93D</color>
+    <color name="accent_red">#FF4444</color>
+
+    <!-- Textos -->
+    <color name="text_primary">#222222</color>
+    <color name="text_secondary">#444444</color>
+
+    <!-- Botones -->
+    <color name="btn_bg">#FFFFF0</color>
+    <color name="btn_bg_pressed">#0FFFFF</color>
+    <color name="btn_border">#00FFAA</color>
+
+    <!-- Menú -->
+    <color name="drawer_text_color">#4CAF50</color>     <!-- Verde claro -->
+    <color name="drawer_icon_color">#4CAF50</color>     <!-- Verde claro -->
+    <color name="drawer_item_background">#F8F8FF</color> <!-- Fondo del ítem -->
+
+    <!-- Tema Claro -->
+    <color name="bg_light">#FFFFFF</color>
+    <color name="bg_light_alt">#F5F5F5</color>
+
+    <color name="text_dark">#000000</color>
+    <color name="text_dark_secondary">#444444</color>
+
+    <color name="accent_blue">#007BFF</color>
+
+</resources>

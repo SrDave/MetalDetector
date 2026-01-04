@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- BARRA SUPERIOR -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:title="Detector de Metales"
+            android:titleTextColor="@android:color/white"/>
+
+        <!-- TU UI ORIGINAL COMPLETA -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_dark"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/TitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Detector de Metales"
+                android:textAlignment="center"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="16dp" />
+
+            <ProgressBar
+                android:id="@+id/progBar"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="0dp"
+                android:layout_height="28dp"
+                android:max="1000"
+                android:progress="0"
+                android:progressDrawable="@drawable/progress_detector"
+                app:layout_constraintTop_toBottomOf="@id/title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="120dp" />
+
+            <com.davidramos.detectormetales.WavePulseView
+                android:id="@+id/waveView"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:alpha="0.85"
+                app:layout_constraintTop_toBottomOf="@id/progBar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="32dp" />
+
+            <Button
+                android:id="@+id/btnMin"
+                style="@style/CalibrateButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CALIBRAR"
+                app:layout_constraintTop_toBottomOf="@id/waveView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="24dp" />
+
+            <LinearLayout
+                android:id="@+id/sensorRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                app:layout_constraintTop_toBottomOf="@id/btnMin"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="24dp">
+
+                <TextView
+                    android:id="@+id/txtX"
+                    style="@style/SensorValueText"
+                    android:text="X: --- µT" />
+
+                <TextView
+                    android:id="@+id/txtY"
+                    style="@style/SensorValueText"
+                    android:text="Y: --- µT" />
+
+                <TextView
+                    android:id="@+id/txtZ"
+                    style="@style/SensorValueText"
+                    android:text="Z: --- µT" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtDiff"
+                style="@style/SensorValueText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Δ: --- µT"
+                app:layout_constraintTop_toBottomOf="@id/sensorRow"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="16dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <!-- MENÚ LATERAL -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:itemIconTint="@color/drawer_icon_color"
+        app:itemTextColor="@color/drawer_text_color"
+        app:itemBackground="@color/drawer_item_background"
+        app:menu="@menu/drawer_menu"
+        app:headerLayout="@layout/drawer_header"
+        />
+
+</androidx.drawerlayout.widget.DrawerLayout>

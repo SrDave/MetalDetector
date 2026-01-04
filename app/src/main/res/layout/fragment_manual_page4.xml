@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@drawable/ic_signal_strength"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:tint="@color/accent_green"
+        tools:ignore="UseAppTint" />
+
+    <TextView
+        android:text="Interpretación de la señal"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/accent_green"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="La barra de señal y el zumbido aumentan cuanto más cerca estés de un metal o una fuente magnética.\n\nSi no escuchas el pitido, revisa el volumen del dispositivo."
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/text_secondary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

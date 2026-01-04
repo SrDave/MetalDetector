@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Tema principal -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:colorBackground">@color/bg_dark</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:navigationBarColor">@color/bg_darker</item>
+    </style>
+
+    <!-- Título principal -->
+    <style name="TitleText">
+        <item name="android:textColor">@color/accent_green</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/roboto_italic</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Valores de sensores -->
+    <style name="SensorValueText">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Botón Calibrar -->
+    <style name="CalibrateButton">
+        <item name="android:background">@drawable/btn_calibrate</item>
+        <item name="android:textColor">@color/accent_green</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/roboto_italic</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Menú -->
+    <style name="DrawerTextStyle">
+        <item name="android:textColor">@color/drawer_text_color</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="DrawerIconStyle">
+        <item name="android:tint">@color/drawer_icon_color</item>
+    </style>
+
+    <!-- Tema claro -->
+    <style name="AppTheme.Light" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorBackground">@color/bg_light</item>
+        <item name="android:textColor">@color/text_dark</item>
+        <item name="android:navigationBarColor">@color/bg_light_alt</item>
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
+
+</resources>

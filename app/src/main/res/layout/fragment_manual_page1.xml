@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@drawable/ic_baseline_explore_24"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:tint="@color/accent_green"
+        tools:ignore="UseAppTint" />
+
+    <TextView
+        android:text="Aleja el móvil de metales"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/accent_green"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="Tu móvil utiliza el magnetómetro, el mismo sensor que emplea la brújula para detectar el campo magnético de la Tierra.
+
+Si empiezas a usar la app con un metal, imán o aparato eléctrico cerca, el sensor se descompensa porque detecta un campo magnético alterado.
+
+\n• El metal modifica el campo natural del entorno.
+\n• El móvil interpreta ese cambio como si hubiera un objeto metálico cerca.\n\n
+
+Por eso es importante comenzar siempre alejado de metales. Así el magnetómetro toma un valor real y la detección será más precisa."
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:textColor="@color/text_secondary"
+        android:layout_marginTop="16dp"
+        android:lineSpacingExtra="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

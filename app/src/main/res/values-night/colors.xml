@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Fondo general -->
+    <color name="bg_dark">#121212</color>
+    <color name="bg_darker">#0D0D0D</color>
+    <!-- Fondo menu -->
+    <color name="drawer_item_background">#222222</color>
+    <!-- Fondo botón -->
+    <color name="btn_bg">#222222</color>
+    <color name="btn_bg_pressed">#333333</color>
+    <!-- Textos -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#A8A8A8</color>
+</resources>

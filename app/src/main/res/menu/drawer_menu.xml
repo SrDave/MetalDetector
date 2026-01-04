@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_inicio"
+            android:title="Inicio"
+            android:icon="@drawable/ic_home"/>
+
+
+        <item
+            android:id="@+id/nav_calibracion"
+            android:title="Calibración avanzada"
+            android:icon="@drawable/ic_calibrate"/>
+
+
+        <item
+            android:id="@+id/nav_sensibilidad"
+            android:title="Sensibilidad"
+            android:icon="@drawable/ic_sensitivity"/>
+
+
+        <item
+            android:id="@+id/nav_manual"
+            android:title="Cómo usar la app"
+            android:icon="@drawable/ic_manual"/>
+
+
+        <item
+            android:id="@+id/nav_tema"
+            android:title="Tema"
+            android:icon="@drawable/ic_theme"/>
+
+
+        <item
+            android:id="@+id/nav_acerca"
+            android:title="Acerca de / Créditos"
+            android:icon="@drawable/ic_info"/>
+    </group>
+
+</menu>
